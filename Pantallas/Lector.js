@@ -1,9 +1,7 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Button, DrawerLayoutAndroid, ToolbarAndroid } from 'react-native';
+import { Text, View, StyleSheet, Button } from 'react-native';
 import Constants from 'expo-constants';
 import * as Permissions from 'expo-permissions';
-import Icon from 'react-native-vector-icons/Ionicons';
-import DrawerNavigator from './navigation/DrawerNavigator';
 
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
@@ -32,7 +30,12 @@ export default class BarcodeScannerExample extends React.Component {
       return <Text>Acceso a la camara denegado</Text>;
     }
     return (
-      <View>
+      <View
+        style={{
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
+        }}>
         <BarCodeScanner
           onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}
           style={StyleSheet.absoluteFillObject}
@@ -40,7 +43,7 @@ export default class BarcodeScannerExample extends React.Component {
 
         {scanned && (
           <Button
-            title={'Presiona para scannear nuevamente'}
+            title={'Tap to Scan Again'}
             onPress={() => this.setState({ scanned: false })}
           />
         )}
