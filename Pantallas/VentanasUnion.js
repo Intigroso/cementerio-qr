@@ -38,6 +38,7 @@ export default class VentanasUnion extends React.Component {
           flexDirection: 'column',
           justifyContent: 'flex-end',
         }}>
+        <MenuButton navigation={this.props.navigation} />
         <BarCodeScanner
           onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}
           style={StyleSheet.absoluteFillObject}

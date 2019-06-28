@@ -38,15 +38,15 @@ export default class MenuDrawer extends React.Component {
 					</View>
 					<View style={styles.bottomLinks}>
 						<View style={{ flexDirection: 'row' }}>
-						<Image style={styles.imga} source={require('../assets/hays-profile.jpg')} />
+						<Image style={styles.imga} source={require('../assets/Localización.png')} />
 						{this.navLink('Home', 'Localización')}
 						</View>
 						<View style={{ flexDirection: 'row' }}>
-						<Image style={styles.imga} source={require('../assets/hays-profile.jpg')} />
+						<Image style={styles.imga} source={require('../assets/Calendario.png')} />
 						{this.navLink('Links', 'Calendario')}
 						</View>
 						<View style={{ flexDirection: 'row' }}>
-						<Image style={styles.imga} source={require('../assets/hays-profile.jpg')} />
+						<Image style={styles.imga} source={require('../assets/Favoritos.png')} />
 						{this.navLink('Settings', 'Favoritos')}
 						</View>
 					</View>
