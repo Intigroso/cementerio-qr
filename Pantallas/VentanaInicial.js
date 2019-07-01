@@ -1,13 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, DrawerLayoutAndroid, ToolbarAndroid } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import Constants from 'expo-constants';
 import * as Permissions from 'expo-permissions';
-import Icon from 'react-native-vector-icons/Ionicons';
-import MenuButton from '../components/MenuButton';
+
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
+import MenuButton from '../components/MenuButton'
+
 export default class VentanaInicial extends React.Component {
-    state = {
+  state = {
     hasCameraPermission: null,
     scanned: false,
   };
@@ -22,7 +23,7 @@ export default class VentanaInicial extends React.Component {
   }
 
   render() {
-  	const { hasCameraPermission, scanned } = this.state;
+    const { hasCameraPermission, scanned } = this.state;
 
     if (hasCameraPermission === null) {
       return <Text>Se solicita permiso para la camara</Text>;
@@ -31,22 +32,30 @@ export default class VentanaInicial extends React.Component {
       return <Text>Acceso a la camara denegado</Text>;
     }
     return (
-      <View style={styles.container}>
+      <View
+        style={{
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+        }}>
         <MenuButton navigation={this.props.navigation} />
-        <Text style={styles.text}>Localización</Text>
+        <BarCodeScanner
+          onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}
+          style={StyleSheet.absoluteFillObject}
+        />
+
+        {scanned && (
+          <Button
+            title={'Tap to Scan Again'}
+            onPress={() => this.setState({ scanned: false })}
+          />
+        )}
       </View>
     );
   }
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 30,
-  }
-});
+  handleBarCodeScanned = ({ type, data }) => {
+    this.setState({ scanned: true });
+    alert(`Codigo de tipo ${type} y dirección ${data} fue scanneado!`);
+  };
+}

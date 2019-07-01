@@ -137,5 +137,7 @@ const styles = StyleSheet.create({
 	imga: {
 	height: 30,
 		width: 30,
+		paddingTop: 35,
+		paddingLeft: 35,
 	}
 })
