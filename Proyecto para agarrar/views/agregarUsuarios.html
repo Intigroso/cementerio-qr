@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Agregar usuarios</title>
+	<link rel="stylesheet" type="text/css" href="./styles/AgregarUsuarios.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
+    <link rel="icon" type="text/css" href="../images/logo.png">
+</head>
+
+
+<body>
+        <div class="red">Administrador: 
+                <div id="Name"></div>
+            </div>
+<div class="container">
+
+    <form method="POST" action="/agregarUsuarios" id="signup">
+
+        <div class="header">
+        
+            <h3>Registro</h3>
+            
+            <p>Por favor complete los datos</p>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        
+            <input name="NombreUsuario" type="text" placeholder="Nombre" autofocus id="NombreUsuario"required />
+
+            <input name="ApellidoUsuario"  type="text" placeholder="Apellido" autofocus id="ApellidoUsuario"required />
+
+        	<input name="DniUsuario" type="text" placeholder="DNI" maxlength="8" id="DniUsuario"required />
+
+            <input name="ContraseñaUsuario" type="password" placeholder="Contraseña" id="ContraseñaUsuario" required />
+            
+            
+
+            <input type="submit" value="Agregar Usuario" id="submit">
+        
+        </div>
+
+    </form>
+
+</div>
+<a id="Cerramos" href="/login">Cerrar sesion</a>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.js" ></script>
+  <script src="/scripts/agregarUsuarios.js"></script>
+
+</body>
+</html>
