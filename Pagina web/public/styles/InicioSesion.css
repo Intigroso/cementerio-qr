@@ -73,7 +73,7 @@ main {
 #signup .sep {
     height: 1px;
     background: #e8e8e8;
-    width: 406px;
+    width: 530px;
     margin: 0px -25px;
 }
 
@@ -106,7 +106,7 @@ input:-moz-placeholder {
     border-radius: 3px;
     border: none;
     padding: 13px 10px;
-    width: 330px;
+    width: 95%;
     margin-bottom: 20px;
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
