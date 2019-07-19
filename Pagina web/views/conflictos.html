@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>conflictos</title>
-    <link rel="stylesheet" type="text/css" href="../public/styles/solicitudes.css">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="../public/styles/Conflictos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
     <link rel="icon" type="text/css" href="../Images/logo.png">
 </head>
@@ -11,34 +11,26 @@
 
 <body>
 <div class="container">
-    <div class="red">Administrador: 
-        <div id="Name"></div>
-    </div>
     <form id="signup" method="POST" action="/conflictos" >
 
         <div class="header">
         
-            <h3>conflicto</h3>
+            <h3>Formulario para agregar biografias</h3>
 
-            <p>Por favor seleccione el aula con la que desea interactuar</p>
+            <p>Por favor complete todos los datos</p>
                 
         </div>
         <div class="header">
         <div class="sep"></div>
 
         <div class="inputs">
+        <p>Nombre del fallecido</p>
+        <input name="Nombre" type="text" placeholder="Nombre" maxlength="20" required />
+        <p>Segundo nombre del fallecido (opcional)</p>
+        <input name="Nombre" type="text" placeholder="Otros nombres" maxlength="20" />
+        <p>Apellido del fallecido</p>
+        <input name="Nombre" type="text" placeholder="Apellido" maxlength="20" required />
 
-        <select name="ListaAulas" id="ListaAulas">
-            <option value="1">Selecione algun conflicto</option>
-        </select>
-        <h3>Profesores Y horarios </h3>
-
-            <p>Aca apareceran el profesor que a solicitado un aula y en que horario</p>
-        <label class="LosSelectQueCambian" id="LosSelectQueCambian"></label> 
-        <label class="LosSelectQueCambian" id="LosSelectQueCambian1"></label> 
-       
-        <input type="submit" value="Aceptar" id="submit" onclick="enviar('aceptar');refresh()">
-        <input type="submit" value="Rechazar" id="submit" onclick="enviar('rechazar');refresh()">
          </div>
         </div>
 
