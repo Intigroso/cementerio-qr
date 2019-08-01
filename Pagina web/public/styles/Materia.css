@@ -73,6 +73,12 @@ form .header p {
     font-weight: 300;
 }
 
+form .inputs p {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 form .sep {
     height: 1px;
     background: #e8e8e8;
@@ -84,7 +90,7 @@ form .inputs {
     margin-top: 25px;
 }
 
-form .inputs label {
+form .inputs label, textarea {
     color: #8f8f8f;
     font-size: 12px;
     font-weight: 300;
@@ -101,7 +107,7 @@ input:-moz-placeholder {
     color:    #b5b5b5;
 }
 
-form .inputs #mater, #prof{
+form .inputs #nombre, #Segundonombre,{
     background: #f5f5f5;
     font-size: 0.8rem;
     -moz-border-radius: 3px;
@@ -128,6 +134,36 @@ form .inputs #prof{
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
 }
+form .inputs #Biografia{
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    height: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+form .inputs #Biografia2{
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    height: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
 form .inputs input[type=text]{
     background: #f5f5f5;
     font-size: 0.8rem;
@@ -141,6 +177,49 @@ form .inputs input[type=text]{
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
 }
+
+form .inputs input[name=Biografia]{
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 350px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+form .inputs input[name=Biografia2]{
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 350px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+form .inputs input[textarea]{
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 350px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
 form .inputs input[type=text]:focus{
     background: #fff;
     box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
@@ -193,6 +272,17 @@ form .inputs #submit {
 }
 
 form .inputs #submit:hover {
+    background: -moz-linear-gradient(
+        top,
+        #a4b0cb 0%,
+        #b9c5dd);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#a4b0cb),
+        to(#b9c5dd));
+}
+
+form .inputs #archivo:hover {
     background: -moz-linear-gradient(
         top,
         #a4b0cb 0%,
@@ -260,6 +350,21 @@ button{
         0px 1px 3px rgba(000,000,000,0.3),
         0px 0px 0px rgba(255,255,255,0);
 }
+
+textarea{
+    background: #f5f5f5;
+    font-size: 1.1rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 350px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
 #Cerramos {
     position: fixed;
     top: 0em;
@@ -357,15 +462,54 @@ form .inputs #Agregamiento:hover {
         to(#b9c5dd));
 }
 div.red {
-    padding:5px;
-    background: rgb(0, 0, 0);
-    box-shadow: 
-        0px 0px 0px 5px rgba(88, 78, 78, 0.4), 
-        0px 4px 20px rgba( 0,0,0,0.33 );
+    display: table;
+    position: static;
+      }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+cursor: pointer;
+    position: absolute;
+    width: 12%;
+    height: 1em;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+        background: -moz-linear-gradient(
+        top,
+        #b9c5dd 0%,
+        #a4b0cb);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#b9c5dd),
+        to(#a4b0cb));
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    display: table;
-    position: static;
-    color: white;
-      }
+    border: 1px solid #737b8d;
+    -moz-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+}
+

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Materias y profesores</title>
+    <title>Cargar Fallecido</title>
     <link rel="stylesheet" type="text/css" href="../public/styles/Materia.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
       <link rel="icon" type="text/css" href="./images/logo.png">
@@ -12,8 +12,7 @@
 <body>
 
 <main>
-        <div class="red">Administrador: 
-                <div id="Name"></div>
+        <div class="red">
             </div>
   <div class="container">
 
@@ -21,7 +20,7 @@
 
         <div class="header">
         
-            <h3>Materias</h3>
+            <h3>Datos del Fallecido</h3>
             
         </div>
               
@@ -29,12 +28,12 @@
 
         <div class="inputs">
                 
-            
-                <input name="materia" type="text" placeholder="Ingrese una materia..." maxlength="30" autofocus required />
-
-                <input type="submit" value="Agregar Materia" id="submit" >
-
-                <ul id="materias">
+            <p>Nombre del fallecido</p>
+            <input name="Nombre" type="text" placeholder="Nombre" maxlength="20" required />
+            <p>Segundo nombre del fallecido (opcional)</p>
+            <input name="Segundonombre" type="text" placeholder="Otros nombres" maxlength="20" />
+            <p>Apellido del fallecido</p>
+            <input name="Apellido" type="text" placeholder="Apellido" maxlength="20" required />
         
         </div>
                
@@ -48,7 +47,7 @@
 
         <div class="header">
         
-            <h3>Profesores</h3>
+            <h3>Biografia</h3>
                 
         </div>
         
@@ -56,12 +55,9 @@
 
         <div class="inputs">
 
-            
-            <ul id="profes">
-                
+            <input name="Biografia" type="text" placeholder="En este espacio escriba la biografia del fallecido..." maxlength="600" required />
+            <textarea name="Biografia2" rows="14" cols="44" maxlength="703">En este espacio escriba la biografía del fallecido...</textarea>
 
-            </ul>
-        
         </div>
 
     </form>
@@ -75,27 +71,20 @@
 
         <div class="header">
         
-            <h3>Asignar materias a profesores</h3>
+            <h3>Comprobacion de identidad</h3>
             
         </div>
         
         <div class="sep"></div>
 
-        <div class="inputs">
-        
-            <!-- <input type="text" placeholder="Materia" maxlength="8" required id="mater" name="mater" /> -->
+        <div class="inputs">    
 
-            <select required id="mater" name="mater">
-                <option value="" disabled selected>Materia...</option>
-            </select>
+           <p>Porfavor adjunte el archivo de imagen del acta de defunción</p>
 
-            <!-- <input type="text" placeholder="Profesor" maxlength="8" required id="prof" name="prof" /> -->
-            
-            <select required id="prof" name="prof">
-                <option value="" disabled selected>Profesor...</option>
-            </select>
+            <input type="file" name="archivo" id="archivo" accept=".pdf,.jpg,.png" class="inputfile">
+            <label for="archivo" style=" margin-left: 80px; color: #fff;">Selelccione un archivo</label>
 
-            <input type="submit" value="Agregar" id="submit" onclick= "addElement()">
+            <input type="submit" value="Agregar" id="submit" onclick= "addElement()" style="margin-top: 70px;">
         
         </div>
 

@@ -21,8 +21,8 @@ body {
       }
     }
 .container {
-    width: 30%;
-    max-width: 45%;
+    width: 15%;
+    max-width: 25%;
     margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
@@ -192,3 +192,7 @@ input:-moz-placeholder {
     height: 1000px;
     
     }
+    div.red {
+    display: table;
+    position: static;
+      }
