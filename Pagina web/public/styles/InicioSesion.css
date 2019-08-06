@@ -5,7 +5,7 @@ html{
 body {
     font-family: "Helvetica Neue", Helvetica, Arial;
     padding-top: 2%;
-    background-image: url(../images/aula.jpg);
+    background-image: url(../images/FondoPC.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -141,8 +141,8 @@ input:-moz-placeholder {
     width: 100%;
     margin-top: 20px;
     padding: 15px 0;
-    color: #fff;
-    font-size: 14px;
+    color: #000000;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     text-align: center;
@@ -153,7 +153,7 @@ input:-moz-placeholder {
         #a4b0cb);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#b9c5dd),
+        from(#9FACFF),
         to(#a4b0cb));
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
