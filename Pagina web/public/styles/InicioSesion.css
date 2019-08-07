@@ -64,7 +64,7 @@ main {
 }
 
 #signup .header p {
-    color: #8f8f8f;
+    color: #000000;
     font-size: 14px;
     font-weight: 300;
 }
@@ -149,42 +149,31 @@ input:-moz-placeholder {
     text-decoration: none;
         background: -moz-linear-gradient(
         top,
-        #b9c5dd 0%,
-        #a4b0cb);
+        #CBD4FC 0%,
+        #CBD4FC);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#9FACFF),
-        to(#a4b0cb));
+        from(#CBD4FC),
+        to(#CBD4FC));
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #737b8d;
-    -moz-box-shadow:
-        0px 5px 5px rgba(000,000,000,0.1),
-        inset 0px 1px 0px rgba(255,255,255,0.5);
-    -webkit-box-shadow:
-        0px 5px 5px rgba(000,000,000,0.1),
-        inset 0px 1px 0px rgba(255,255,255,0.5);
-    box-shadow:
-        0px 5px 5px rgba(000,000,000,0.1),
-        inset 0px 1px 0px rgba(255,255,255,0.5);
-    text-shadow:
-        0px 1px 3px rgba(000,000,000,0.3),
-        0px 0px 0px rgba(255,255,255,0);
     display: table;
     position: static;
     clear: both;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 
 #signup .inputs #submit:hover {
     background: -moz-linear-gradient(
         top,
-        #a4b0cb 0%,
-        #b9c5dd);
+        #CBD4FC 0%,
+        #c0cbfc);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#a4b0cb),
-        to(#b9c5dd));
+        from(#CBD4FC),
+        to(#c0cbfc));
 }
 
 .aiua {
