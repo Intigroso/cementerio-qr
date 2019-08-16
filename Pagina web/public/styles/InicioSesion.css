@@ -149,12 +149,12 @@ input:-moz-placeholder {
     text-decoration: none;
         background: -moz-linear-gradient(
         top,
-        #CBD4FC 0%,
-        #CBD4FC);
+        #91F59B 0%,
+        #91F59B);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#CBD4FC),
-        to(#CBD4FC));
+        from(#91F59B),
+        to(#91F59B));
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -168,12 +168,12 @@ input:-moz-placeholder {
 #signup .inputs #submit:hover {
     background: -moz-linear-gradient(
         top,
-        #CBD4FC 0%,
-        #c0cbfc);
+        #91F59B 0%,
+        #C6E4C9);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#CBD4FC),
-        to(#c0cbfc));
+        from(#91F59B),
+        to(#C6E4C9));
 }
 
 .aiua {

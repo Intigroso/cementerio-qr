@@ -244,12 +244,12 @@ form .inputs #submit {
     text-decoration: none;
         background: -moz-linear-gradient(
         top,
-        #b9c5dd 0%,
-        #a4b0cb);
+        #91F59B 0%,
+        #91F59B);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#b9c5dd),
-        to(#a4b0cb));
+        from(#91F59B),
+        to(#91F59B));
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -274,23 +274,23 @@ form .inputs #submit {
 form .inputs #submit:hover {
     background: -moz-linear-gradient(
         top,
-        #a4b0cb 0%,
-        #b9c5dd);
+        #91F59B 0%,
+        #C6E4C9);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#a4b0cb),
-        to(#b9c5dd));
+        from(#91F59B),
+        to(#C6E4C9));
 }
 
 form .inputs #archivo:hover {
     background: -moz-linear-gradient(
         top,
-        #a4b0cb 0%,
-        #b9c5dd);
+        #91F59B 0%,
+        #C6E4C9);
     background: -webkit-gradient(
         linear, left top, left bottom, 
-        from(#a4b0cb),
-        to(#b9c5dd));
+        from(#91F59B),
+        to(#C6E4C9));
 }
 
 select#prof{
