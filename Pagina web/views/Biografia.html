@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Cargar Fallecido</title>
-    <link rel="stylesheet" type="text/css" href="../public/styles/DatosCargados.css">
+    <title>Cargar Biografia</title>
+    <link rel="stylesheet" type="text/css" href="../public/styles/Biografia.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
       <link rel="icon" type="text/css" href="../public/images/LogoSinFondo.png">
 </head>
@@ -54,9 +54,7 @@
         <div class="sep"></div>
 
         <div class="inputs">
-
-            <input name="Biografia" type="text" placeholder="En este espacio escriba la biografia del fallecido..." maxlength="600" required />
-            <textarea name="Biografia2" rows="14" cols="44" maxlength="703" placeholder="En este espacio escriba la biografía del fallecido..."></textarea>
+            <textarea name="Biografia2" rows="20" cols="44" maxlength="3075" placeholder="En este espacio escriba la biografía del fallecido..."></textarea>
 
         </div>
 
@@ -78,8 +76,13 @@
         <div class="sep"></div>
 
         <div class="inputs">    
+
+           <p>Porfavor adjunte el archivo de imagen del acta de defunción</p>
+
+            <input type="file" name="archivo" id="archivo" accept=".pdf,.jpg,.png" class="inputfile">
+            <label for="archivo" style=" margin-left: 80px; color: #fff;">Selelccione un archivo</label>
+
             <input type="submit" value="Agregar" id="submit" onclick= "addElement()" style="margin-top: 70px;">
-            <input type="submit" name="Rechazar" id="Rechazar" value="Rechazar">
           </div>
         </div>
 
