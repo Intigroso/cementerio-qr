@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="../public/styles/Registrarse.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
+    <link rel="icon" type="text/css" href="../public/images/LogoSinFondo.png">
+</head>
+
+
+<div class="container">
+
+    <form method="POST" action="/agregarUsuarios" id="signup">
+
+        <div class="header">
+        
+            <h3>Registrarse</h3>
+            
+            <p>Por favor complete los datos. Si ya tiene una cuenta ingrese <a href="inicioSesion.html">aqui</a></p>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        
+            <input name="Nombre" type="text" placeholder="Nombre de usuario" autofocus id="Nombre"required />
+
+            <input name="Mail"  type="text" placeholder="Mail" autofocus id="Apellido"required />
+
+            <input name="ContraseñaUsuario" type="password" placeholder="Contraseña" id="ContraseñaUsuario" required />
+
+             <input name="RepeticionContraseña" type="password" placeholder="Repetir Contraseña" maxlength="16" id="RepeticionContraseña"required />
+            
+            
+
+            <input type="submit" value="Agregar Usuario" id="submit">
+        
+        </div>
+
+    </form>
+
+</div>
+
+<img src="../public/images/LogoSinFondo.png" alt="Logo de la empresa" style="position:fixed;right:0px;bottom: 0px;height: 300px;width: 370px ">
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.js" ></script>
+  <script src="/scripts/agregarUsuarios.js"></script>
+
+</body>
+</html>

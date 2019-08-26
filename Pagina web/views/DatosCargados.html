@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cargar Fallecido</title>
+    <link rel="stylesheet" type="text/css" href="../public/styles/DatosCargados.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
+      <link rel="icon" type="text/css" href="../public/images/LogoSinFondo.png">
+</head>
+
+
+<body>
+
+<main>
+        <div class="red">
+            </div>
+  <div class="container">
+
+      <form method="POST" action="/agregarMateria" id="signup">
+
+        <div class="header">
+        
+            <h3>Datos del Fallecido</h3>
+            
+        </div>
+              
+        <div class="sep"></div>
+
+        <div class="inputs">
+                
+            <p>Nombre del fallecido</p>
+            <input name="Nombre" type="text" placeholder="Nombre" maxlength="20" id="Nombre" required />
+            <p>Segundo nombre del fallecido (opcional)</p>
+            <input name="Segundonombre" type="text" placeholder="Otros nombres" maxlength="20" id="Segundonombre" />
+            <p>Apellido del fallecido</p>
+            <input name="Apellido" type="text" placeholder="Apellido" maxlength="20" required id="Apellido" />
+        
+        </div>
+               
+
+    </form>
+
+  </div>
+  <div class="container">
+
+    <form id="signup">
+
+        <div class="header">
+        
+            <h3>Biografia</h3>
+                
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+
+            <input name="Biografia" type="text" placeholder="En este espacio escriba la biografia del fallecido..." maxlength="600" required />
+            <textarea name="Biografia2" rows="14" cols="44" maxlength="703" placeholder="En este espacio escriba la biografía del fallecido..."></textarea>
+
+        </div>
+
+    </form>
+
+</div>
+
+
+<div class="container">
+
+      <form method="POST" action="/asignarMateria" id="asignarMateria">
+
+        <div class="header">
+        
+            <h3>Comprobacion de identidad</h3>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">    
+
+           <p>Porfavor adjunte el archivo de imagen del acta de defunción</p>
+
+            <input type="file" name="archivo" id="archivo" accept=".pdf,.jpg,.png" class="inputfile">
+            <label for="archivo" style=" margin-left: 80px; color: #fff;">Selelccione un archivo</label>
+
+            <input type="submit" value="Agregar" id="submit" onclick= "addElement()" style="margin-top: 70px;">
+            <input type="submit" name="Rechazar" id="Rechazar" value="Rechazar">
+          </div>
+        </div>
+
+    </form>
+
+
+</main>
+<img src="../public/images/LogoSinFondo.png" alt="Logo de la empresa" style="position:fixed;right:0px;bottom: 0px;height: 300px;width: 370px ">
+<a id="Cerramos" href="/login" >Cerrar sesion</a>
+      
+      
+  <script type="text/javascript" src="../public/scripts/profesymaterias.js"></script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+  <script src="./scripts/Materias.js"></script>
+</body>
+</html>
