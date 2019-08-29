@@ -67,7 +67,7 @@
 
 <div class="container">
 
-      <form method="POST" action="/asignarMateria" id="asignarMateria">
+      <form method="POST" action="../views/solicitudes.html" id="solicitudes">
 
         <div class="header">
         
@@ -78,8 +78,8 @@
         <div class="sep"></div>
 
         <div class="inputs">    
-            <input type="submit" value="Agregar" id="submit" onclick= "addElement()" style="margin-top: 70px;">
-            <input type="submit" name="Rechazar" id="Rechazar" value="Rechazar">
+            <input type="submit" value="Agregar" id="submit" onclick= "addElement();refresh()">
+            <input type="submit" name="Rechazar" id="Rechazar" value="Rechazar" onclick= "addElement();refresh()">
           </div>
         </div>
 
