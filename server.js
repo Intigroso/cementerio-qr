@@ -19,9 +19,38 @@ router.get('/', function(req, res) {
     res,json({ message: 'welcome'});
 });
 
-//route registro
-router.post('/register', login.register);
+
+app.get('/usuario',login.usuario)
+app.get('/usuarioxid/:id',login.usuarioxid)
+app.get('/personas',login.personas)
+app.get('/personasstandby',login.personasstandby)
+app.post('/personasstanby_insert/:id',login.personasstanby_insert)
+
+/*
+
+router.post('/register', function(req,res){
+	Controller.Create
+});
+router.post('/usuarios', function(req,res){
+	Controller.Create
+});
+router.post('/personasstandby', function(req,res){
+ 	Controller.Create
+});
+router.post('/personas', function(req,res){
+	Controller.Create
+});
+router.post('/usuario', function(req,res){
+	Controller.Create
+});
+
+
+*/
 //router.post('/login', login.login)
+
+//app.post('/user/all', function(req, res){
+ // Controller.Create
+// });
 
 app.use('/api', router);
 app.listen(5000);
