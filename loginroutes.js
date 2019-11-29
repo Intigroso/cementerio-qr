@@ -54,5 +54,22 @@ connection.connect(function (err) {
   });
 };
 
+  exports.favoritos = function(req, res){
+        let user_id = req.params.id;
+        connection.query('SELECT idfallecido FROM FAVORITOS WHERE idusuario=?', user_id, function (error, results, fields) {
+         if (error) throw error;
+         res.send(results);
+  });
+  };
+  exports.favoritos_insert = function(req, res){
+      let user_id = req.params.idusuario 
+      let id_fallecido = req.params.idfallecido
+
+      connection.query('INSERT INTO FAVORITOS (idusuario, idfallecido) VALUES (?,?) ', [user_id, id_fallecido], function (error, results, fields) {
+      if (error) throw error;
+      res.send(results);
+  });
+};
+
     
 

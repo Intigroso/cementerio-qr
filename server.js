@@ -24,8 +24,9 @@ app.get('/usuario',login.usuario)
 app.get('/usuarioxid/:id',login.usuarioxid)
 app.get('/personas',login.personas)
 app.get('/personasstandby',login.personasstandby)
+app.get('/favoritos/:idusuario',login.favoritos)
 app.post('/personasstanby_insert/:id',login.personasstanby_insert)
-
+app.post('/favoritos_insert/:idusuario/:idfallecido',login.favoritos_insert)
 /*
 
 router.post('/register', function(req,res){
